@@ -13,8 +13,8 @@ Through this project, I have strengthened my skills in building full-stack appli
 ### App Interface
 
 ![Capture](https://github.com/user-attachments/assets/5fe377a4-5f75-46ed-9ca9-faed1613c577)
-![notess](https://github.com/user-attachments/assets/a491e0f5-c1b4-486e-8051-879a7f72a34b)
-![2](https://github.com/user-attachments/assets/451e0f9c-27cc-4a09-96cb-955cd0cb8814)
+![notess](https://github.com/user-attachments/assets/77449041-e93d-42f7-b042-6245c13624ae)
+![Capture](https://github.com/user-attachments/assets/33a30aa2-d61d-4b25-bdac-13cedff789bf)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

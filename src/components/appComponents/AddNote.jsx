@@ -72,7 +72,7 @@ export default function AddNote({ modalType, noteData }) {
             </DialogTitle>
             <DialogDescription>
               {modalType == "add" ? "Add a" : "Edit your"} note here. Click save
-              when you're done.
+              when you&apos;re done.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">

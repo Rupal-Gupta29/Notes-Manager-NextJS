@@ -15,7 +15,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function AddNote({ modalType, noteData }) {
-  const router = useRouter();
   const [errorMsg, setErrorMsg] = useState("");
   const [openDialogue, setOpenDialogue] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -24,6 +23,7 @@ export default function AddNote({ modalType, noteData }) {
       ? { title: noteData.title, description: noteData.description }
       : { title: "", description: "" }
   );
+  const router = useRouter();
 
   const handleSaveNote = async () => {
     try {
@@ -49,7 +49,7 @@ export default function AddNote({ modalType, noteData }) {
           setNotesData({ title: "", description: "" });
           setErrorMsg("");
           setLoading(false);
-          setNotes(prev => [result.note, ...prev]);
+          router.refresh();
         }
       }
     } catch (err) {

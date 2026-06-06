@@ -29,6 +29,7 @@ export default function AddNote({ modalType, noteData }) {
     try {
       if (!notesData.title.trim() || !notesData.description.trim()) {
         setErrorMsg("Please fill all the fields.");
+        setLoading(false);
       } else {
         setLoading(true);
         if (modalType === "add") {
@@ -48,7 +49,7 @@ export default function AddNote({ modalType, noteData }) {
           setNotesData({ title: "", description: "" });
           setErrorMsg("");
           setLoading(false);
-          router.refresh();
+          setNotes(prev => [result.note, ...prev]);
         }
       }
     } catch (err) {
